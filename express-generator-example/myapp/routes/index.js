@@ -11,4 +11,8 @@ router.get('/about', (req, res) => {
   res.render('about', { title: 'About' });
 });
 
+router.get('/form', (req, res) => {
+  res.render('form', { title: 'Form' });
+});
+
 module.exports = router;
