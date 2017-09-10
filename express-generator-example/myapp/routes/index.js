@@ -8,6 +8,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/about', (req, res) => {
   // res.send('test this works');
+  res.render('about', { title: 'About' });
 });
 
 module.exports = router;

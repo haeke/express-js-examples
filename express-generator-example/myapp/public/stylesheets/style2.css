@@ -1,0 +1,51 @@
+html {
+    font-family: 'Arvo', serif;
+}
+.container {
+    display: grid;
+    padding: 1em;
+    background: gray;
+    margin: 2rem auto 0 auto;
+    max-width: 900px;
+}
+
+#title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#content, .editor {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+}
+
+.articles {
+    display: grid;
+    text-align: center;
+    grid-templates-rows: 1fr 1fr 1fr;
+    padding: 1em;
+}
+
+.center {
+    display: grid;
+    margin: 0 auto;
+}
+
+.title {
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
