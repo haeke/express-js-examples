@@ -11,3 +11,49 @@ form input {
   background: #fff;
   border: 1px solid ##9c9c9c9c;
 }
+
+form button {
+  background: #fefefe;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+
+form button:hover {
+  background: #ffd700;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: 2px solid #ffd700;
+}
+
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+
+  h2 {
+    grid-column: 2 / 3;
+  }
+
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
+}
