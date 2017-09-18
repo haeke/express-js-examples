@@ -1,4 +1,8 @@
 var express = require('express');
+var parseUrl = require('parseurl');
+var expressValidator = require('express-validator');
+var mongoose = require('mongoose');
+var Signature = require('./models/signature.js');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -9,6 +13,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+const url = 'mongodb://localhost:27017/signatures';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

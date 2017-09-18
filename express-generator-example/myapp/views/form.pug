@@ -1,21 +1,17 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style3.css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Arvo')
+extends layout
+block content
   body
-    form.form(action="")
-      h2 Sign Up
-      label.first-name(for="firstName") First Name
-      input#firstName(type="text")
-      label.last-name(for="lastName") Last Name
-      input#lastName(type="text")
-      label.job(for="job") Job
-      input#job(type="text")
-      label.age(for="age") Age
-      input#age(type="text")
-      label.email(for="email") Email
-      input#email(type="text")
-      
-      button Submit
+      form.form(action="")
+        h2 Sign Up 
+        label.first-name(for="firstName") First Name
+        input#firstName(type="text")
+        label.last-name(for="lastName") Last Name
+        input#lastName(type="text")
+        label.job(for="job") Job
+        input#job(type="text")
+        label.age(for="age") Age
+        input#age(type="text")
+        label.email(for="email") Email
+        input#email(type="text")
+        
+        button Submit

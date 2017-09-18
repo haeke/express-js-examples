@@ -12,7 +12,15 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/form', (req, res) => {
-  res.render('form', { title: 'Form' });
+  const companies = {
+    name: 'Google',
+    age: 10,
+    software: {
+        name: 'Google Search Engine',
+    },
+  };
+  //res.json(companies);
+  res.render('form', { title: 'Form', companies: companies });
 });
 
 module.exports = router;
