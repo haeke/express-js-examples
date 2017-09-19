@@ -1,0 +1,16 @@
+extends layout
+block content
+  form.form(action="/quotes" method="POST")
+        h2 New Guest 
+        label.first-name(for="name") Name
+        input#firstName(type="text" name="name" placeholder="Enter your Name")
+        label.last-name(for="quote") Quote
+        input#lastName(type="text" name="quote" placeholder="Enter a quote")
+        button(type="submit") Submit
+
+  h1.title Guest Book
+  div.card__area
+      each val in quotes
+        div.card
+          h2.name #{val.name}
+          p.quote #{val.quote}

@@ -1,24 +1,3 @@
 extends layout
 block content
-  //- h1.title New Guest
-  //-   form(action="/quotes" method="POST")
-  //-     p Name:
-  //-       input(type="text" name="name" placeholder="Enter Your name")
-  //-     p Quote:
-  //-       input(type="text" name="quote" placeholder="Enter a quote")
-  //-     button(type="submit") Button
-  form.form(action="/quotes" method="POST")
-        h2 New Guest 
-        label.first-name(for="name") Name
-        input#firstName(type="text" name="name" placeholder="Enter your Name")
-        label.last-name(for="quote") Quote
-        input#lastName(type="text" name="quote" placeholder="Enter a quote")
-        button(type="submit") Submit
-
-  h1.title Guest Book
-    ul
-      each val in quotes
-        li #{val.name}
-        li #{val.quote}
-  
-        
+  h1 Welcome to the Homepage !

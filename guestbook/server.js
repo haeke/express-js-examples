@@ -23,11 +23,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.get('/form', (req, res) => {
   db.collection('quotes').find().toArray((err, result) => {
     if (err) return console.log(err);
 
     //res.json(result);
-    res.render('index', { quotes: result });
+    res.render('form', { quotes: result });
   });
 });
 
